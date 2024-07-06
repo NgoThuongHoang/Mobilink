@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web của bạn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="../img/logo.JPG" id="logo-img">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#recruitment">Tuyển dụng</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button>Tìm kiếm</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Trang chủ -->
+        <section id="home">
+            <div class="slider">
+                <div class="slide">
+                    <img src="./img/slide1.JPG" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="./img/slide2.JPG" alt="Slide 2">
+                </div>
+            </div> 
+
+        </section>
+
+    <!-- Khuyến mãi -->
+    <section id="promotions">
+        <div class="promotions-container">
+            <h2 class="promotions-title">Các khuyến mãi</h2>
+            <div class="promotion-image">
+                <img src="./img/khuyen-mai-1.jpg" id="khuyenmai" alt="Khuyến mãi">
+            </div>
+        </div>
+    </section>
+
+        <!-- Sản phẩm -->
+        <section id="products">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="product-list">
+                <!-- Thông tin sản phẩm sẽ được thêm vào đây -->
+                <div class="product-item">
+                    <img src="./img/sanpham1.JPG" alt="Sản phẩm 1">
+                    <div class="product-info">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: 1.000.000 VND</p>
+                        <p>Mô tả: Chi tiết thông số của sản phẩm 1</p>
+                    </div>
+                </div>
+
+                <!-- Thêm nhiều sản phẩm khác ở đây -->
+
+                <div class="product-item">
+                    <img src="./img/sản phẩm dầu thủy lực.JPG" alt="Sản phẩm 2">
+                    <div class="product-info">
+                        <h3>Sản phẩm 2</h3>
+                        <p>Giá: 1.000.000 VND</p>
+                        <p>Mô tả: Chi tiết thông số của sản phẩm 2</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <img src="./img/sanpham1.JPG" alt="Sản phẩm 3">
+                    <div class="product-info">
+                        <h3>Sản phẩm 3</h3>
+                        <p>Giá: 1.000.000 VND</p>
+                        <p>Mô tả: Chi tiết thông số của sản phẩm 3</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="promotions">
+            <div class="promotions-container">
+                <h2 class="promotions-title">Thông tin về công ty</h2>
+                <div class="promotion-image">
+                    <img src="./img/giới thiệu - 1.JPG" id="khuyenmai" alt="Khuyến mãi">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Tuyển dụng -->
+        <section id="recruitment">
+            <h2>Tuyển dụng</h2>
+            <div class="recruitment-content">Nội dung tuyển dụng</div>
+        </section>
+
+        <!-- Tin tức -->
+        <section id="news">
+            <h2>Tin tức</h2>
+            <div class="news-content">
+                <!-- Bài báo về dầu nhớt -->
+                <article>
+                    <h3>Bài báo 1</h3>
+                    <p>Nội dung bài báo 1...</p>
+                </article>
+                <!-- Thêm nhiều bài báo khác ở đây -->
+            </div>
+        </section>
+
+        <!-- Liên hệ -->
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <div class="contact-info">
+                <p>Thông tin liên hệ của công ty</p>
+                <p>Các trang mạng xã hội của công ty</p>
+                <p>Các cơ sở hiện có của công ty</p>
+            </div>
+
+            
+            <div class="consultation-form">
+                <h2>Đăng ký tư vấn sản phẩm</h2>
+                <form id="consultation-form">
+                    <div class="form-group">
+                        <label for="name">Họ và tên:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Sản phẩm quan tâm:</label>
+                        <input type="text" id="product" name="product" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nội dung:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+            
+    
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>Thông tin công ty</h3>
+            <p>Nội dung về công ty...</p>
+        </div>
+        <div class="footer-column">
+            <h3>Liên kết</h3>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#recruitment">Tuyển dụng</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Chính sách bán hàng</h3>
+            <p>Nội dung về chính sách bán hàng...</p>
+        </div>
+        <div class="footer-column">
+            <h3>Thông tin liên lạc</h3>
+            <p>Email: contact@company.com</p>
+            <p>Điện thoại: 0123-456-789</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Lên đầu trang">↑</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

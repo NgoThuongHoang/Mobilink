@@ -1,0 +1,286 @@
+/* Đặt kiểu cơ bản cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Định dạng cho slider */
+#home .slider {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px); /* Tính toán chiều cao slider dựa trên chiều cao header */
+    overflow: hidden;
+    margin-top: 0;
+}
+
+#home .slide {
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+}
+
+#home .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp hình ảnh luôn phủ kín khung mà không bị biến dạng */
+    image-rendering: -webkit-optimize-contrast; /* Tối ưu hiển thị cho hình ảnh */
+    image-rendering: crisp-edges; /* Cho các trình duyệt hỗ trợ */
+}
+
+.promotions-container {
+    text-align: center; /* Căn giữa nội dung trong container */
+    margin: 20px 0; /* Khoảng cách trên dưới cho container */
+}
+
+
+/* Hiệu ứng chuyển slide */
+#home .slide:not(:first-child) {
+    transform: translateX(100%);
+}
+
+
+/* Định dạng cho header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #EEEEEE;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px; /* Điều chỉnh kích thước của logo */
+    margin-right: 10px;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: red;
+}
+
+
+header .search-box {
+    display: flex;
+}
+
+header .search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+header .search-box button {
+    padding: 5px;
+    border: none;
+    background-color: #555;
+    color: #F8FBFC;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+/* Định dạng cho main content */
+main {
+    padding: 20px;
+}
+
+#home .slider {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#home .slide {
+    min-width: 100%;
+    transition: 0.5s;
+}
+
+#home .company-info,
+#home .products-overview,
+#home .promotions,
+#home .consultation-form {
+    margin-bottom: 20px;
+}
+
+#products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products .product-item {
+    width: 30%;
+    margin: 1.66%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+#products .product-item:hover {
+    transform: scale(1.05);
+}
+
+#products .product-item img {
+    width: 100%;
+    display: block;
+}
+
+#products .product-info {
+    padding: 10px;
+}
+
+#recruitment,
+#news,
+#contact {
+    margin-bottom: 20px;
+}
+
+/* Định dạng cho footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #F8FBFC;
+    color: black;
+}
+
+nav ul{
+    list-style-type: none; /* Loại bỏ dấu chấm của li */
+
+}
+
+footer .footer-column {
+    width: 22%;
+}
+
+/* CSS cho footer */
+footer .footer-column ul {
+    list-style-type: none; /* Loại bỏ dấu chấm của các mục danh sách */
+    padding: 0; /* Loại bỏ padding mặc định của danh sách */
+    margin: 0; /* Loại bỏ margin mặc định của danh sách */
+}
+
+footer .footer-column ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục danh sách */
+}
+
+footer .footer-column ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân của các liên kết */
+    color: #666; /* Màu văn bản cho liên kết */
+    transition: color 0.3s; /* Hiệu ứng màu khi di chuột qua liên kết */
+}
+
+footer .footer-column ul li a:hover {
+    color: red; /* Màu văn bản khi di chuột qua liên kết */
+}
+
+
+/* CSS cho biểu mẫu đăng ký tư vấn */
+.consultation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.consultation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.consultation-form form {
+    display: grid;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS cho nút mũi tên lên đầu trang */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+#scrollToTopBtn.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
